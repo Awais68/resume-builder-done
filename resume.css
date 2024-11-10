@@ -1,0 +1,133 @@
+.main-container{
+    /* container: ; */
+    background-color: beige;
+    border: 2px solid royalblue;
+    min-height: 100vh;
+    display: flex ;
+    /* justify-content: space-between; */
+    /* content: center; */
+    /* text-align: center; */
+    margin-top: 10px;
+
+
+}
+
+.left{
+    width: 30%;
+    background-color: rgba(138, 234, 247, 0.486);
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.upper {
+    color:black
+}
+/* .profile_sec {
+    margin-left: 50px;
+}
+
+.profile_sec >img{
+    margin-left: 50px;
+} */
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  #profile {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* h1 {
+    color: #fff;
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  
+  h3 {
+    font-size: 16px;
+    color: #fff;
+  } */
+  
+
+.heading{
+ text-align: center;
+}
+/* .sub-heading{
+    margin-left: -40px;
+
+} */
+
+.upper{
+    padding: 30px;
+    /* margin-left: 50px; */
+    /* display: inline-flex; */
+}
+
+.right{
+    width: 70%;
+    background-color: rgb(51, 22, 90);
+    min-height: auto;
+    /* margin-top: 50px; */
+    color: white
+    
+    
+}
+.main{
+    
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+img{
+    width: 300px ;
+    height: 300px;
+    border-radius: 50%;
+    /* box-shadow: greenyellow; */
+    /* align-items: center; */
+    margin-top: 30px;
+
+}/* Add print-specific styles */
+@media print {
+    .main-container {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      page-break-before: auto;  /* Ensures that new sections start on the same page */
+      page-break-after: auto;   /* Avoids content spilling onto the next page */
+    }
+  
+    .left, .right {
+      width: 50%;
+      float: left;
+      padding: 10px;
+      page-break-inside: avoid;  /* Prevents content from splitting between pages */
+    }
+  
+    .profile_sec {
+      text-align: center;
+      margin-bottom: 20px;
+      page-break-inside: avoid;
+    }
+  
+    .heading {
+      font-size: 1.5rem;
+    }
+  
+    .sub-heading {
+      font-size: 1rem;
+    }
+  }
+    

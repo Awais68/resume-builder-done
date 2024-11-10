@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resume.css" />
+    <title>Resume</title><script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left">
+        <div class="profile_sec">
+          <img src="default-profile-image.jpg" alt="profile-image" />
+          <!-- Placeholder image -->
+          <h1 class="heading" id="name">
+            Awais Niaz <br /><span class="sub-heading">Web Developer</span>
+          </h1>
+        </div>
+
+        <br />
+        <div class="upper">
+          <h1 id="contact">Contact Info</h1>
+
+          <h3 id="phone">Phone:</h3>
+          <h3 id="email">Email:</h3>
+          <h3 id="linkdin">LinkedIn:</h3>
+          <h3 id="location">Location: Karachi, Pakistan</h3>
+
+          <h1>Eduction</h1>
+
+          <h3 id="education">Bachelors:</h3>
+          <h3 id="masters">Masters:</h3>
+
+          <h1>Languages</h1>
+          <div id="lang"></div>
+          <!-- This will be dynamically updated -->
+
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="main">
+          <h1>PROFILE</h1>
+          <p id="profile">
+            Dynamic and results-driven professional with [X] years of experience
+            in [industry or field]. Proven track record in [specific skills or
+            achievements], including [list key skills or accomplishments, e.g.],
+            improving team performance, driving revenue growth, or implementing
+            process improvements. Skilled in [relevant software, tools, or
+            methodologies] and known for exceptional problem-solving abilities,
+            attention to detail, and strong communication skills. Adept at
+            collaborating with cross-functional teams to achieve business
+            objectives and deliver high-quality results on time and within
+            budget. Passionate about [mention any area of focus or industry
+            trends], with a commitment to continuous professional development
+            and innovation.
+          </p>
+
+          <h1 class="second" id="experience">EXPERIENCE</h1>
+
+          <h3 class="sec-one">Senior Supervisor:</h3>
+          <p id="workExp">
+            5 years of leadership experience in managing teams, optimizing
+            workflows, and ensuring high levels of productivity and efficiency.
+            Proven ability to supervise day-to-day operations, train and mentor
+            staff, and implement operational improvements that drive
+            performance. Skilled in managing schedules, overseeing quality
+            control, and resolving issues to maintain a smooth and effective
+            work environment.
+          </p>
+
+          <h3 class="sec-two">Python Developer:</h3>
+          <p id="pythonExp">
+            Experienced Python Developer with [X] years of hands-on expertise in
+            designing, developing, and deploying scalable web applications and
+            automation solutions. Proficient in Python frameworks such as
+            Django, Flask, and FastAPI, with strong knowledge of RESTful API
+            development and integration. Skilled in data manipulation and
+            analysis using libraries like Pandas, NumPy, and SQL, and
+            experienced with cloud platforms (e.g., AWS, Azure) and version
+            control tools like Git.
+          </p>
+
+          <h1 id="skills">Professional Skills</h1>
+
+          <div id="skillsList"></div> <!-- Skills will be dynamically populated here -->
+        </div>
+      </div>
+    </div>
+    <button class="btn" id="submit" onclick="downloadResume()">Download</button>
+
+    <script src="resume.js"></script>
+  </body>
+</html>
